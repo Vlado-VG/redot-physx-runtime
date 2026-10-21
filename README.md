@@ -14,7 +14,7 @@ When a project selects `PhysX` as its 3D physics engine, the editor checks for t
 ## Updating the runtime
 
 1. Build/test the new SDK runtime.
-2. Attach the new bundle zip to a release tagged after the SDK version (e.g. `v5.13.0` → `physx-runtime-5.13.0-windows.zip`).
+2. Attach the new bundle zip to a release tagged after the SDK version (e.g. `v5.12.0` → `physx-runtime-5.12.0-windows.zip`).
 3. Update `manifest.json` (version, URL, hashes, sizes) and commit.
 
 The engine's manifest URL constant then moves to the new tag — no other code change needed.

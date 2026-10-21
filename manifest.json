@@ -7,7 +7,7 @@
   "platforms": {
     "windows": {
       "bundle": {
-        "url": "https://github.com/Vlado-VG/redot-physx-runtime/releases/download/v5.12.0/physx-runtime-5.12.0-windows.zip",
+        "url": "https://github.com/Vlado-VG/redot-physx-runtime/releases/download/RD-26.3_Px-5.12_B006-Beta/physx-runtime-5.12.0-windows.zip",
         "sha256": "9cce174fab39d5bfee006a783c8e2d3f06e6e3ebb94dc6dac967775e6facd707",
         "size_bytes": 115908351,
         "files": [
