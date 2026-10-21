@@ -1,0 +1,5 @@
+# Binary assets: never let git normalize or diff these.
+*.zip binary
+*.dll binary
+*.so binary
+*.pdb binary

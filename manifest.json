@@ -1,0 +1,69 @@
+{
+  "manifest_version": 1,
+  "runtime_version": "5.12.0",
+  "physx_sdk_version": "5.12.0",
+  "updated": "2026-10-21",
+  "notes": "PhysX GPU runtime + Blast destruction DLLs for the Redot PhysX module. Windows only for now; Linux bundles are planned.",
+  "platforms": {
+    "windows": {
+      "bundle": {
+        "url": "https://github.com/Vlado-VG/redot-physx-runtime/releases/download/v5.12.0/physx-runtime-5.12.0-windows.zip",
+        "sha256": "9cce174fab39d5bfee006a783c8e2d3f06e6e3ebb94dc6dac967775e6facd707",
+        "size_bytes": 115908351,
+        "files": [
+            {
+              "name": "NvBlast.dll",
+              "sha256": "1e5f0e04f5b9ace2ae004004c38ccaf4f159bc9b6f6627b2f4cfb689c5cab759",
+              "size_bytes": 60928
+            },
+            {
+              "name": "NvBlastExtAssetUtils.dll",
+              "sha256": "24e1b30956ab20eeeb232b054f0910afbc6e5457de8da1191b975ee30490b925",
+              "size_bytes": 18944
+            },
+            {
+              "name": "NvBlastExtAuthoring.dll",
+              "sha256": "9e9887a08027816c799b1738f5d0e783afbbc6772b823c02668e09a1bea308c1",
+              "size_bytes": 823808
+            },
+            {
+              "name": "NvBlastExtSerialization.dll",
+              "sha256": "ebf99517eaf59b0c3c7e3cee6f1b37c90cfcc01d1eff628a5b307c7a348fccbd",
+              "size_bytes": 142848
+            },
+            {
+              "name": "NvBlastExtShaders.dll",
+              "sha256": "b2967860b4537c69606218b4518acfd010ed60cdb7cf6bbb2901efc68f521375",
+              "size_bytes": 37376
+            },
+            {
+              "name": "NvBlastExtStress.dll",
+              "sha256": "9a8e48d41ddd86381776e9e67cd9c5f46b49c80d554db1c5af041248e0fbc4bd",
+              "size_bytes": 66560
+            },
+            {
+              "name": "NvBlastExtTkSerialization.dll",
+              "sha256": "de0eba9ec40b9124ee1590200bd7045ce07e18513b5ac4c7aaf36da99f1676f6",
+              "size_bytes": 147968
+            },
+            {
+              "name": "NvBlastGlobals.dll",
+              "sha256": "0fb4cc3c9769f9491fe9291fca324594a703fc468c87d6352818c831873deebe",
+              "size_bytes": 24064
+            },
+            {
+              "name": "NvBlastTk.dll",
+              "sha256": "37e326fc417f333d0ce946d4599b20f1c9fd36253170562a23ed54de097583f4",
+              "size_bytes": 83968
+            },
+            {
+              "name": "PhysXGpu_64.dll",
+              "sha256": "b9b402e9af1e6134bdf4c2603ee4bebc9611ffcf098deb9f55293e5fe2e96d9f",
+              "size_bytes": 352394752
+            }
+        ]
+      }
+    },
+    "linux": null
+  }
+}
