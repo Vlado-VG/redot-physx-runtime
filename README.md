@@ -1,6 +1,6 @@
 # redot-physx-runtime
 
-Runtime binaries for the [Redot Engine](https://github.com/Redot-Engine/redot-engine) **PhysX module**: the NVIDIA PhysX GPU runtime and the Blast destruction DLLs, packaged so the editor can download them on demand instead of shipping them with every build.
+Runtime binaries for the [Redot Engine](https://github.com/Redot-Engine/redot-engine) **PhysX module**: the NVIDIA PhysX GPU runtime, the Blast destruction DLLs and the NVIDIA Flow runtime DLLs, packaged so the editor can download them on demand instead of shipping them with every build.
 
 ## Layout
 
@@ -21,5 +21,5 @@ The engine's manifest URL constant then moves to the new tag — no other code c
 
 ## Status
 
-- Windows x86_64: **available** (PhysX SDK 5.12.0, checked runtime for editor builds).
-- Linux x86_64: planned (the SDK build pipeline exists in the engine repo's `physx_sdk_builds.yml`).
+- Windows x86_64: **available** (PhysX SDK 5.12.0 — GPU runtime, Blast 5.0.6, Flow 2.2.0).
+- Linux x86_64: **available** (same SDK set as shared libraries; the nine Blast libraries are hard-linked into the Linux editor, so they must be present before it can start — the in-editor download offer can only top up the lazily-loaded PhysXGpu/Flow runtimes, the bundle otherwise serves manual installs).

@@ -2,68 +2,146 @@
   "manifest_version": 1,
   "runtime_version": "5.12.0",
   "physx_sdk_version": "5.12.0",
-  "updated": "2026-10-21",
-  "notes": "PhysX GPU runtime + Blast destruction DLLs for the Redot PhysX module. Windows only for now; Linux bundles are planned.",
+  "updated": "2026-10-27",
+  "notes": "PhysX GPU runtime, Blast destruction libraries and the NVIDIA Flow runtime for the Redot PhysX module, for Windows and Linux.",
   "platforms": {
     "windows": {
       "bundle": {
-        "url": "https://github.com/Vlado-VG/redot-physx-runtime/releases/download/RD-26.3_Px-5.12_B006-Beta/physx-runtime-5.12.0-windows.zip",
-        "sha256": "9cce174fab39d5bfee006a783c8e2d3f06e6e3ebb94dc6dac967775e6facd707",
-        "size_bytes": 115908351,
+        "url": "https://github.com/Vlado-VG/redot-physx-runtime/releases/download/PhysX-5.12_Blast-5.0.6_Flow-2.2.0-Runtime/physx-runtime-5.12.0-windows.zip",
+        "sha256": "1fbddc0866cfbeb48c51fc82db67a604f5d87a17600ce6e9e4b3e1913c00db21",
+        "size_bytes": 119842964,
         "files": [
-            {
-              "name": "NvBlast.dll",
-              "sha256": "1e5f0e04f5b9ace2ae004004c38ccaf4f159bc9b6f6627b2f4cfb689c5cab759",
-              "size_bytes": 60928
-            },
-            {
-              "name": "NvBlastExtAssetUtils.dll",
-              "sha256": "24e1b30956ab20eeeb232b054f0910afbc6e5457de8da1191b975ee30490b925",
-              "size_bytes": 18944
-            },
-            {
-              "name": "NvBlastExtAuthoring.dll",
-              "sha256": "9e9887a08027816c799b1738f5d0e783afbbc6772b823c02668e09a1bea308c1",
-              "size_bytes": 823808
-            },
-            {
-              "name": "NvBlastExtSerialization.dll",
-              "sha256": "ebf99517eaf59b0c3c7e3cee6f1b37c90cfcc01d1eff628a5b307c7a348fccbd",
-              "size_bytes": 142848
-            },
-            {
-              "name": "NvBlastExtShaders.dll",
-              "sha256": "b2967860b4537c69606218b4518acfd010ed60cdb7cf6bbb2901efc68f521375",
-              "size_bytes": 37376
-            },
-            {
-              "name": "NvBlastExtStress.dll",
-              "sha256": "9a8e48d41ddd86381776e9e67cd9c5f46b49c80d554db1c5af041248e0fbc4bd",
-              "size_bytes": 66560
-            },
-            {
-              "name": "NvBlastExtTkSerialization.dll",
-              "sha256": "de0eba9ec40b9124ee1590200bd7045ce07e18513b5ac4c7aaf36da99f1676f6",
-              "size_bytes": 147968
-            },
-            {
-              "name": "NvBlastGlobals.dll",
-              "sha256": "0fb4cc3c9769f9491fe9291fca324594a703fc468c87d6352818c831873deebe",
-              "size_bytes": 24064
-            },
-            {
-              "name": "NvBlastTk.dll",
-              "sha256": "37e326fc417f333d0ce946d4599b20f1c9fd36253170562a23ed54de097583f4",
-              "size_bytes": 83968
-            },
-            {
-              "name": "PhysXGpu_64.dll",
-              "sha256": "b9b402e9af1e6134bdf4c2603ee4bebc9611ffcf098deb9f55293e5fe2e96d9f",
-              "size_bytes": 352394752
-            }
+          {
+            "name": "NvBlast.dll",
+            "sha256": "1e5f0e04f5b9ace2ae004004c38ccaf4f159bc9b6f6627b2f4cfb689c5cab759",
+            "size_bytes": 60928
+          },
+          {
+            "name": "NvBlastExtAssetUtils.dll",
+            "sha256": "24e1b30956ab20eeeb232b054f0910afbc6e5457de8da1191b975ee30490b925",
+            "size_bytes": 18944
+          },
+          {
+            "name": "NvBlastExtAuthoring.dll",
+            "sha256": "9e9887a08027816c799b1738f5d0e783afbbc6772b823c02668e09a1bea308c1",
+            "size_bytes": 823808
+          },
+          {
+            "name": "NvBlastExtSerialization.dll",
+            "sha256": "ebf99517eaf59b0c3c7e3cee6f1b37c90cfcc01d1eff628a5b307c7a348fccbd",
+            "size_bytes": 142848
+          },
+          {
+            "name": "NvBlastExtShaders.dll",
+            "sha256": "b2967860b4537c69606218b4518acfd010ed60cdb7cf6bbb2901efc68f521375",
+            "size_bytes": 37376
+          },
+          {
+            "name": "NvBlastExtStress.dll",
+            "sha256": "9a8e48d41ddd86381776e9e67cd9c5f46b49c80d554db1c5af041248e0fbc4bd",
+            "size_bytes": 66560
+          },
+          {
+            "name": "NvBlastExtTkSerialization.dll",
+            "sha256": "de0eba9ec40b9124ee1590200bd7045ce07e18513b5ac4c7aaf36da99f1676f6",
+            "size_bytes": 147968
+          },
+          {
+            "name": "NvBlastGlobals.dll",
+            "sha256": "0fb4cc3c9769f9491fe9291fca324594a703fc468c87d6352818c831873deebe",
+            "size_bytes": 24064
+          },
+          {
+            "name": "NvBlastTk.dll",
+            "sha256": "37e326fc417f333d0ce946d4599b20f1c9fd36253170562a23ed54de097583f4",
+            "size_bytes": 83968
+          },
+          {
+            "name": "PhysXGpu_64.dll",
+            "sha256": "b9b402e9af1e6134bdf4c2603ee4bebc9611ffcf098deb9f55293e5fe2e96d9f",
+            "size_bytes": 352394752
+          },
+          {
+            "name": "nvflow.dll",
+            "sha256": "d47741d099f1621ea694c0c979c8b2613c299fc4aaf34c5c0c9febdccbf60ec5",
+            "size_bytes": 2066944
+          },
+          {
+            "name": "nvflowext.dll",
+            "sha256": "d71c09f98f50e7f116a63e5e3f38f1a2a18069d6c78f5481575be19595bf6eca",
+            "size_bytes": 10371072
+          }
         ]
       }
     },
-    "linux": null
+    "linux": {
+      "bundle": {
+        "url": "https://github.com/Vlado-VG/redot-physx-runtime/releases/download/PhysX-5.12_Blast-5.0.6_Flow-2.2.0-Runtime/physx-runtime-5.12.0-linux.zip",
+        "sha256": "4e901bde699cba8461a8a0986e5f769d7988dfff760e529df08eb7a2886f7105",
+        "size_bytes": 128233642,
+        "files": [
+          {
+            "name": "libNvBlast.so",
+            "sha256": "5674bd3ce7e0220105c38ece9c51d12b2ee78cf27821cf797774ae9004ce7b84",
+            "size_bytes": 654072
+          },
+          {
+            "name": "libNvBlastExtAssetUtils.so",
+            "sha256": "302433fea9d07458bdf0f9a17a7f0e0c46e50c2a964fee40e71a98ff8767010d",
+            "size_bytes": 66336
+          },
+          {
+            "name": "libNvBlastExtAuthoring.so",
+            "sha256": "5c06e8cbd815c57030fa10fc4a8caaada7b22705907613a9214962f0d9253940",
+            "size_bytes": 14601288
+          },
+          {
+            "name": "libNvBlastExtSerialization.so",
+            "sha256": "51e8f785462c1ab36ab340ecc12f95777ed3a3cee3836ba13b70d1151eaa8d03",
+            "size_bytes": 4156424
+          },
+          {
+            "name": "libNvBlastExtShaders.so",
+            "sha256": "10c214ee192e429b79ba90ba66547f7321a1497131ff82505bfdc00613c5d8a7",
+            "size_bytes": 390128
+          },
+          {
+            "name": "libNvBlastExtStress.so",
+            "sha256": "a509763f07e35e701e3ac506eabe05a99e92e9776518443ebc2ae5296499e4f6",
+            "size_bytes": 619240
+          },
+          {
+            "name": "libNvBlastExtTkSerialization.so",
+            "sha256": "03ad6385e615deda51ece4981c2cd26d2c191e4ff8280ae3f8727c65c72fe99f",
+            "size_bytes": 4061408
+          },
+          {
+            "name": "libNvBlastGlobals.so",
+            "sha256": "f04e80abfb4997ba79c502a7cd53d3d234bc80e4bbc06292da9e17362628ba98",
+            "size_bytes": 160952
+          },
+          {
+            "name": "libNvBlastTk.so",
+            "sha256": "642418a812d2a7dee9c408c9f03e10b17540f172ca7390a6a964ac7f828c751b",
+            "size_bytes": 1627800
+          },
+          {
+            "name": "libPhysXGpu_64.so",
+            "sha256": "2133e95f7e494700370e575acb8fb5d48a0af12b3fe1a66117a338af459194b6",
+            "size_bytes": 352497041
+          },
+          {
+            "name": "libnvflow.so",
+            "sha256": "1375f327fe25809d444b26cc1f2ac03b0bc38ae84dfbe059c60cfab1b8244747",
+            "size_bytes": 2823008
+          },
+          {
+            "name": "libnvflowext.so",
+            "sha256": "e2cdffafe68bd5e75e44235d1f526ff4c832ebada16e8b9fc94b70e58a010bc7",
+            "size_bytes": 12257704
+          }
+        ]
+      }
+    }
   }
 }
