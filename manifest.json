@@ -77,7 +77,7 @@
     "linux": {
       "bundle": {
         "url": "https://github.com/Vlado-VG/redot-physx-runtime/releases/download/PhysX-5.12_Blast-5.0.6_Flow-2.2.0-Runtime/physx-runtime-5.12.0-linux.zip",
-        "sha256": "4e901bde699cba8461a8a0986e5f769d7988dfff760e529df08eb7a2886f7105",
+        "sha256": "18d600d006caf095c005426e6c0fd4dade7fb2c1354fbc9c65eb601a83511add",
         "size_bytes": 128233642,
         "files": [
           {
@@ -132,12 +132,12 @@
           },
           {
             "name": "libnvflow.so",
-            "sha256": "1375f327fe25809d444b26cc1f2ac03b0bc38ae84dfbe059c60cfab1b8244747",
+            "sha256": "603f834bc88601d61f2b7854b6b0978afc7fd1da9efccd5ff8ceee18b1454df2",
             "size_bytes": 2823008
           },
           {
             "name": "libnvflowext.so",
-            "sha256": "e2cdffafe68bd5e75e44235d1f526ff4c832ebada16e8b9fc94b70e58a010bc7",
+            "sha256": "60ec7982db50813a1c9d0b9460442bafebf2bd07882891347600a0b92dcec534",
             "size_bytes": 12257704
           }
         ]
