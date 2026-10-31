@@ -2,7 +2,7 @@
   "manifest_version": 1,
   "runtime_version": "5.12.0",
   "physx_sdk_version": "5.12.0",
-  "updated": "2026-10-27",
+  "updated": "2026-10-31",
   "notes": "PhysX GPU runtime, Blast destruction libraries and the NVIDIA Flow runtime for the Redot PhysX module, for Windows and Linux.",
   "platforms": {
     "windows": {
@@ -77,8 +77,8 @@
     "linux": {
       "bundle": {
         "url": "https://github.com/Vlado-VG/redot-physx-runtime/releases/download/PhysX-5.12_Blast-5.0.6_Flow-2.2.0-Runtime/physx-runtime-5.12.0-linux.zip",
-        "sha256": "18d600d006caf095c005426e6c0fd4dade7fb2c1354fbc9c65eb601a83511add",
-        "size_bytes": 128233642,
+        "sha256": "bb7a35ef6cae1ee0f6a111b7642d0d7d1d8a97c60948decfffe2f00220e1a157",
+        "size_bytes": 128233649,
         "files": [
           {
             "name": "libNvBlast.so",
@@ -132,12 +132,12 @@
           },
           {
             "name": "libnvflow.so",
-            "sha256": "603f834bc88601d61f2b7854b6b0978afc7fd1da9efccd5ff8ceee18b1454df2",
+            "sha256": "af7b59f36288d98f53a053099db01631be17abb083df077711546fea6ea971e7",
             "size_bytes": 2823008
           },
           {
             "name": "libnvflowext.so",
-            "sha256": "60ec7982db50813a1c9d0b9460442bafebf2bd07882891347600a0b92dcec534",
+            "sha256": "616afebf77d1e1b4f4ad1ad239be4045a4201755bd1524dd4d1d1ed063f7aaf3",
             "size_bytes": 12257704
           }
         ]
